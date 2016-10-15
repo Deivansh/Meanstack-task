@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="myMovie">
+<head>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js">
+  </script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+</head>
+<body>
+   <div class="abc">
+
+      <a  href="#">Home_Page</a>
+      <a href="#book">Booking-Page</a>
+      <a  href="#offer">We_Offer</a>
+      <a  href="#contact">About_Us</a>
+      <a href="#sign">Sign_Up</a>
+</div>
+ <h1 id="ind">YOU ARE AT, THE DMOVIES</h1>
+<br>
+<div id="pic">
+<img src="poster1.jpg"><img src="poster2.jpg"><img src="poster3.jpg">
+</div>
+<div ng-view>
+</div>
+<br>
+<div class="def">
+  <h5>&copy; Dmovies.com</h5>
+</div>
+
+<script>
+var myMovie = angular.module("myMovie", ["ngRoute"]);
+myMovie.config(function($routeProvider) {
+    $routeProvider
+
+    .when("/.", {
+
+        templateUrl : "index.html"
+    })
+    .when("/book", {
+
+        templateUrl : " booking.html"
+    })
+    .when("/offer", {
+        templateUrl : " offer.html"
+    })
+    .when("/contact", {
+        templateUrl : " contact.html"
+    })
+     .when("/sign", {
+         templateUrl : "sign.html"
+     });
+});
+</script>
+</body>
+</html>

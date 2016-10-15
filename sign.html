@@ -1,0 +1,72 @@
+<!-- <div>
+  <h1><a href="#abc">SIGNUP</a>OR    <a href="#login">LOGIN</a>
+    <script>
+console.log("hello123");
+    myMovie.config(function($routeProvider) {
+console.log("hello");
+        $routeProvider
+        .when("/login", {
+            templateUrl : "login.html"
+        });
+      });
+
+
+
+        </script>
+
+
+        <div ng-view>
+        </div>
+        <br> -->
+        <!-- <p>Name: <input type=""></p>
+
+        <p>Username:
+          <form name="myForm"><input type="email" name="myInput" ng-model="myInput">
+</form><span ng-show="myForm.myInput.$invalid || myForm.myInput.$untouched">Invalid email.</span></p>
+
+<!-- <button onclick="check()">submit</button><p id="d"></p> -->
+  <!-- <p>Password: <input type=""></p>
+  <p>Re-confirm password: <input type=""></p>
+
+</div>
+<script> -->
+<!-- console.log("h"); -->
+<!-- // function check()
+// {
+// if (myForm.myInput.$valid==1)
+// {
+// document.getElementById("d")="valid mail"
+// }
+// else {
+//   document.getElementById("d")="invalid mail"
+// }
+// } -->
+<!-- </script> -->
+
+<div>
+  <div id="s">
+    <h1><a id="si" ng-mouseover="signfield=true; loginfield=false">SIGNUP</a></h1>
+    <div ng-show="signfield">
+      <form name="myForm1">
+    <p>Name: <input placeholder="Name..." type="" required></p>
+    <p>Username:
+      <input placeholder="UserName..." type="email" name="mysInput" ng-model="mysInput" required>
+      <span ng-show="myForm1.mysInput.$invalid || myForm1.mysInput.$untouched">Invalid email.</span></p>
+      <p>Password: <input placeholder="Password..." type="password" name="mypass1" ng-model="mypass1" required>
+      <p>Confirm Password: <input placeholder="re-confirm..." type="" name="mypass11" ng-model="mypass11" required>
+        <button type="button2" ng-diabled="myForm1.$invalid" ">Submit</button>
+      </form>
+  </div>
+  </div>
+<div id="l">
+  <h1><a id="lo" ng-mouseover="signfield=false; loginfield=true">LOGIN</a></h1>
+  <div ng-show="loginfield">
+    <form name="myForm2">
+    <p>Username: <input placeholder="UserName" type="email" name="mylInput" ng-model="mylInput" required>
+      <span ng-show="myForm2.mylInput.$invalid || myForm2.mylInput.$untouched">Invalid email.</span></p>
+      <p>Password: <input placeholder="Password..." type="" name="mypass2" ng-model="mypass2" required>
+        <button type="button3" ng-diabled="myForm2.$invalid" ">Login</button>
+</form>
+  </div>
+</div>
+</div>

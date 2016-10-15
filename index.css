@@ -1,0 +1,67 @@
+
+.abc{
+  color: white;
+  text-align: right;
+  /*border-bottom-style: solid;*/
+  background-color: red;
+  /*border-color: red;*/
+  /*border-width: 55px;*/
+  height: auto;
+
+
+}
+
+body{
+  background-color: black;
+}
+#ind{
+  color: white;
+  padding-left: -200px;
+  border-bottom-style: groove;
+  border-color: silver;
+}
+.abc a{
+  /*margin-left: 10px;*/
+  color: white;
+  text-decoration: none;
+  border-right-style: double;
+  border-color: black;
+  padding-right: 10px;
+  font-size: 20px;
+}
+.def{
+  background-color: red;
+  height:auto;
+  margin-top: 100%;
+  text-align: center;
+}
+h5{
+  color: white;
+}
+h1{
+  color: white;
+  text-align: center;
+}
+p{
+  color: white;
+  font-size: 20px;
+}
+img{
+  margin-top: 30px;
+  padding-left: 10px;
+  height: 300px;
+  width: 300px;
+}
+input.ng-invalid{
+  background-color: red;
+}
+div #s{
+  background-color: grey;
+  width:50%;
+  float: left;
+}
+div #l{
+  background-color: grey;
+  width:50%;
+  float:right;
+}
